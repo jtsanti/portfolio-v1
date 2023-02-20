@@ -1,47 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Justin Santiago | Web Developer</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="justin santiago, justin, santiago, jtsanti, front-end, web, website, computer, software, developer" />
+        <meta name="author" content="Justin Santiago" />
+        <meta name="description" content="Web Developer, UI/UX Developer, Front-end Developer" />
+        <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="./styles/main.css">
-        <title>Justin Santiago</title>
+        <script src="https://kit.fontawesome.com/4c4c7a9917.js" crossorigin="anonymous"></script>
     </head>
 
-    <body>
-        <header class="col">
-            <div class="container">
-                <h1>Justin Santiago</h1>
-                <p>I'm an indepedent frontend developer aiming to break into the industry</p>
+    <body id="page_top">
+        <nav>
+            <ul id="page_navbar">
+                <li><a href="#page_top">Justin Santiago</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header id="page_header" class="container">
+            <div>
+                <h1>Hi, I'm Justin</h1>
+                <p>I'm a Web Developer based in Orlando, FL and I enjoy creating new things.</p>
+                <a href="#about"><span class="fa-solid fa-chevron-down"><span></a>
             </div>
         </header>
 
-        <nav class="row">
-            <div class="container">
-                <ul>
-                    <li>Top</li>
-                    <li>My Story</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </nav>
-        
-        <main>
-            <section id="about" class="row">
+        <main  class="container">
+            <section id="about" class="wrapper_flex">
+                <h2>A Bit About Me</h2>
                 <img src="./images/jsantiago.jpg" alt="Justin Santiago headshot">
-                <div class="col">
-                    <h2>My Story</h2>
-                    <p>Hi there, I'm Justin, and I enjoy creating new things.</p>
-                    <p>My interest in web development was sparked back in 2020 while updating content through WYSIWYG editors at work. These were small changes at first, but it prompted me to take a chance and start taking a class or two to see if this could go somewhere. At the height of Covid, my company at the time retooled our product to produce virtual conferences for our clients and I was chosen to lead this project. What started as minor HTML and CSS tweaks through our theme editor grew into an insatiable passion for creating beautiful designs and fully-scalable web apps</p>
-                    <p>Now I'm looking to start my professional journey with more hands-on and practical experience.</p>
-                </div>
+                <p>Thanks for visiting! My name is Justin and I'm a web developer with a passion for front end design.</p>
+                <p>I've been in the space for a few years now and am always looking for new opportunities to grow myself and my craft. My journey began back in 2020 where my company at the time had me working with WYSIWYG editors to make visual changes through our CMS. I developed an insatiable curiosity as I strived to learn how to do new and cool things with their themes and that sparked the idea that this may be something to explore further. After taking a few courses at a local college, I knew I was hooked and I haven't looked back. While right now I've been working mainly with the front end, I'm working towards going full stack in the future.</p>
+                <p>When I'm taking breaks from coding or learning, you can usually find me in the kitchen trying my hand at a new recipe or picking up a new board game to try out.</p>
             </section>
             
-            <section id="projects">
+            <section id="experience" class="wrapper_flex">
+                <h2>Experience</h2>
+                <p>I've been doing web development for about 3 years now and have learned a thing or two.</p>
+
+                <article>
+                    <h3>Technologies I've worked with:</h3>
+                    <div>
+                        <img class="icon_tech" src="./images/icons/html5.png" alt="HTML5 Icon"></img>
+                        <img class="icon_tech" src="./images/icons/css3.png" alt="CSS3 Icon"></img>
+                        <img class="icon_tech" src="./images/icons/js.png" alt="JavaScript Icon"></img>
+                        <img class="icon_tech" src="./images/icons/sass.png" alt="SASS Icon"></img>
+                        <img class="icon_tech" src="./images/icons/bootstrap.png" alt="Bootstrap Icon"></img>
+                        <img class="icon_tech" src="./images/icons/ts.png" alt="TypeScript Icon"></img>
+                        <img class="icon_tech" src="./images/icons/jquery.png" alt="JQuery Icon"></img>
+                        <img class="icon_tech" src="./images/icons/nodejs.png" alt="Node JS Icon"></img>
+                        <img class="icon_tech" src="./images/icons/angular.png" alt="Angular Icon"></img>
+                        <img class="icon_tech" src="./images/icons/react.png" alt="React Icon"></img>
+                        <img class="icon_tech" src="./images/icons/mysql.png" alt="My SQL Icon"></img>
+                        <img class="icon_tech" src="./images/icons/git.png" alt="Git Icon"></img>
+                        <img class="icon_tech" src="./images/icons/vsc.png" alt="Visual Studio Code Icon"></img>
+                        <img class="icon_tech" src="./images/icons/atom.png" alt="Atom Icon"></img>
+                        <img class="icon_tech" src="./images/icons/jira.png" alt="Jira Icon"></img>
+                        <img class="icon_tech" src="./images/icons/confluence.png" alt="Confluence Icon"></img>
+                        <img class="icon_tech" src="./images/icons/ps.png" alt="Adobe Photoshop Icon"></img>
+                        <img class="icon_tech" src="./images/icons/jslint.png" alt="JS Lint Icon"></img>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>Technologies I'm starting to learn:</h3>
+                    <div>
+                        <img class="icon_tech" src="./images/icons/rails.png" alt="Ruby on Rails Icon"></img>
+                        <img class="icon_tech" src="./images/icons/docker.png" alt="Docker Icon"></img>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>Technologies on my roadmap:</h3>
+                    <div>
+                        <img class="icon_tech" src="./images/icons/python.png" alt="Python Icon"></img>
+                        <img class="icon_tech" src="./images/icons/php.png" alt="PHP Icon"></img>
+                        <img class="icon_tech" src="./images/icons/c-sharp.png" alt="C Sharp Icon"></img>
+                        <img class="icon_tech" src="./images/icons/jenkins.png" alt="Jenkins Icon"></img>
+                        <img class="icon_tech" src="./images/icons/yarn.png" alt="Yarn Icon"></img>
+                    </div>
+                    
+                </article>
+            </section>
+
+            <section id="projects" class="wrapper_flex">
                 
             </section>
 
-            <section id="contact" class="col">
+            <section id="contact" class="wrapper_flex">
                 <h2>Want to work together?</h2>
                 <a href="mailto:justintsantiago11@gmail.com"><button>Email Me</button></a>
             </section>
