@@ -16,19 +16,20 @@ const stopAnimateChevron = () => {
 }
 
 // Close Bootstrap nav menu when clicked on mobile
-function closeNavOnClick() {
+const closeNavOnClick = () => {
     const navItems = document.querySelectorAll('.nav-item')
     const navBar = document.getElementById('navbarNav')
-    const collapse = new bootstrap.Collapse(navBar);
+    const collapse = new bootstrap.Collapse(navBar, {
+        toggle: false
+    });
 
     navItems.forEach((link) => {
         link.addEventListener('click', () => { collapse.toggle() })
     })
 }
 
-
 window.onload = () => {
-    animateChevron(1000);
+    animateChevron(2000);
 
     nextArrow.onclick = () => {
         stopAnimateChevron();

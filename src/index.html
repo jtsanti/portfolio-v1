@@ -14,64 +14,47 @@
         <script src="https://kit.fontawesome.com/4c4c7a9917.js" crossorigin="anonymous"></script>
     </head>
 
-    <body id="page_top">
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
-            <div class="container">
-                <a id="home" class="navbar-brand" href="#page_top">JS</a>
-            </div>
-            <div class="collapse navbar-collapse navbar-main-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#experience">Experience</a></li>
-                    <li><a class="page-scroll" href="#projects">Projects</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav> -->
-
+    <body id="top" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
         <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
             <div class="container-fluid">
-              <a id="home" class="navbar-brand" href="#page_top">Justin Santiago</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#page_top">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-              </div>
+                <a id="home" class="navbar-brand" href="#top">Justin Santiago</a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
           </nav>
 
-        <header id="page_header" class="outer-wrapper">
-            <div>
+        <header id="page-header">
+            <div class="container">
                 <h1>Hi, I'm Justin</h1>
                 <p>I'm a Web Developer based in Orlando, FL and I enjoy creating new things.</p>
-                <a href="./resources/Justin Santiago Resume 2023.pdf" target="_blank" class="btn btn-outline-light">Download My Resume</a>
-                <a href="#about"><span id="next-arrow" class="fa-solid fa-chevron-down"><span></a>
+                <a href="./resources/Justin Santiago Resume 2023.pdf" target="_blank" class="btn btn-outline-light">Download My Resume <i class="fa-solid fa-download"></i></a>
+                <a href="#about"><span id="next-arrow" class="fa-solid fa-chevron-down fa-2xl"><span></a>
             </div>
         </header>
 
         <main>
-            <section id="about" class="outer-wrapper">
-                <div class="inner-wrapper">
+            <section id="about">
+                <div class="container inner-wrapper">
                     <h2>A Bit About Me</h2>
                     <img class="my-3" src="./images/jsantiago.jpg" alt="Justin Santiago headshot">
                     <p>Thanks for visiting! My name is Justin and I'm a web developer with a passion for clean, functional UIs.</p>
@@ -80,60 +63,60 @@
                 </div>
             </section>
             
-            <section id="experience"  class="outer-wrapper">
-                <div class="inner-wrapper">
+            <section id="experience"  class="">
+                <div class="container inner-wrapper">
                     <h2>Experience</h2>
                     <p>I've been doing web development for about 3 years now and have learned a thing or two.</p>
 
                     <article>
                         <h3>Technologies I've worked with:</h3>
                         <div class="tech-learned">
-                            <img class="icon_tech" src="./images/icons/html5.png" alt="HTML5 Icon"></img>
-                            <img class="icon_tech" src="./images/icons/css3.png" alt="CSS3 Icon"></img>
-                            <img class="icon_tech" src="./images/icons/js.png" alt="JavaScript Icon"></img>
-                            <img class="icon_tech" src="./images/icons/sass.png" alt="SASS Icon"></img>
-                            <img class="icon_tech" src="./images/icons/bootstrap.png" alt="Bootstrap Icon"></img>
-                            <img class="icon_tech" src="./images/icons/ts.png" alt="TypeScript Icon"></img>
-                            <img class="icon_tech" src="./images/icons/jquery.png" alt="JQuery Icon"></img>
-                            <img class="icon_tech" src="./images/icons/jslint.png" alt="JS Lint Icon"></img>
-                            <img class="icon_tech" src="./images/icons/nodejs.png" alt="Node JS Icon"></img>
-                            <img class="icon_tech" src="./images/icons/angular.png" alt="Angular Icon"></img>
-                            <img class="icon_tech" src="./images/icons/react.png" alt="React Icon"></img>
-                            <img class="icon_tech" src="./images/icons/mysql.png" alt="My SQL Icon"></img>
-                            <img class="icon_tech" src="./images/icons/git.png" alt="Git Icon"></img>
-                            <img class="icon_tech" src="./images/icons/vsc.png" alt="Visual Studio Code Icon"></img>
-                            <img class="icon_tech" src="./images/icons/atom.png" alt="Atom Icon"></img>
-                            <img class="icon_tech" src="./images/icons/jira.png" alt="Jira Icon"></img>
-                            <img class="icon_tech" src="./images/icons/confluence.png" alt="Confluence Icon"></img>
-                            <img class="icon_tech" src="./images/icons/ps.png" alt="Adobe Photoshop Icon"></img>
+                            <img class="tech-icon" src="./images/icons/html5.png" alt="HTML5 Icon"></img>
+                            <img class="tech-icon" src="./images/icons/css3.png" alt="CSS3 Icon"></img>
+                            <img class="tech-icon" src="./images/icons/js.png" alt="JavaScript Icon"></img>
+                            <img class="tech-icon" src="./images/icons/sass.png" alt="SASS Icon"></img>
+                            <img class="tech-icon" src="./images/icons/bootstrap.png" alt="Bootstrap Icon"></img>
+                            <img class="tech-icon" src="./images/icons/ts.png" alt="TypeScript Icon"></img>
+                            <img class="tech-icon" src="./images/icons/jquery.png" alt="JQuery Icon"></img>
+                            <img class="tech-icon" src="./images/icons/jslint.png" alt="JS Lint Icon"></img>
+                            <img class="tech-icon" src="./images/icons/nodejs.png" alt="Node JS Icon"></img>
+                            <img class="tech-icon" src="./images/icons/angular.png" alt="Angular Icon"></img>
+                            <img class="tech-icon" src="./images/icons/react.png" alt="React Icon"></img>
+                            <img class="tech-icon" src="./images/icons/mysql.png" alt="My SQL Icon"></img>
+                            <img class="tech-icon" src="./images/icons/git.png" alt="Git Icon"></img>
+                            <img class="tech-icon" src="./images/icons/vsc.png" alt="Visual Studio Code Icon"></img>
+                            <img class="tech-icon" src="./images/icons/atom.png" alt="Atom Icon"></img>
+                            <img class="tech-icon" src="./images/icons/jira.png" alt="Jira Icon"></img>
+                            <img class="tech-icon" src="./images/icons/confluence.png" alt="Confluence Icon"></img>
+                            <img class="tech-icon" src="./images/icons/ps.png" alt="Adobe Photoshop Icon"></img>
                         </div>
                     </article>
 
                     <article>
                         <h3>Technologies I'm starting to learn:</h3>
                         <div class="tech-learning">
-                            <img class="icon_tech" src="./images/icons/rails.png" alt="Ruby on Rails Icon"></img>
-                            <img class="icon_tech" src="./images/icons/docker.png" alt="Docker Icon"></img>
-                            <img class="icon_tech" src="./images/icons/redux.png" alt="Redux Icon"></img>
+                            <img class="tech-icon" src="./images/icons/rails.png" alt="Ruby on Rails Icon"></img>
+                            <img class="tech-icon" src="./images/icons/docker.png" alt="Docker Icon"></img>
+                            <img class="tech-icon" src="./images/icons/redux.png" alt="Redux Icon"></img>
                         </div>
                     </article>
 
                     <article>
                         <h3>Technologies on my roadmap:</h3>
                         <div class="tech-future">
-                            <img class="icon_tech" src="./images/icons/python.png" alt="Python Icon"></img>
-                            <img class="icon_tech" src="./images/icons/php.png" alt="PHP Icon"></img>
-                            <img class="icon_tech" src="./images/icons/c-sharp.png" alt="C Sharp Icon"></img>
-                            <img class="icon_tech" src="./images/icons/jenkins.png" alt="Jenkins Icon"></img>
-                            <img class="icon_tech" src="./images/icons/mongodb.png" alt="Mongo DB Icon"></img>
-                            <img class="icon_tech" src="./images/icons/yarn.png" alt="Yarn Icon"></img>
+                            <img class="tech-icon" src="./images/icons/python.png" alt="Python Icon"></img>
+                            <img class="tech-icon" src="./images/icons/php.png" alt="PHP Icon"></img>
+                            <img class="tech-icon" src="./images/icons/c-sharp.png" alt="C Sharp Icon"></img>
+                            <img class="tech-icon" src="./images/icons/jenkins.png" alt="Jenkins Icon"></img>
+                            <img class="tech-icon" src="./images/icons/mongodb.png" alt="Mongo DB Icon"></img>
+                            <img class="tech-icon" src="./images/icons/yarn.png" alt="Yarn Icon"></img>
                         </div>
                     </article>
                 </div>
             </section>
 
-            <section id="projects" class="outer-wrapper">
-                <div class="inner-wrapper">
+            <section id="projects" class="">
+                <div class="container inner-wrapper">
                     <h2>Projects</h2>
                     <br>
                     <h3>Coming Soon!</h3>
@@ -141,8 +124,8 @@
 
             </section>
 
-            <section id="contact" class="outer-wrapper">
-                <div class="inner-wrapper">
+            <section id="contact" class="">
+                <div class="container inner-wrapper">
                     <h2>Contact</h2>
                     <p>Have a question or want to work together? Reach out and say hi!</p>
                     
@@ -165,7 +148,7 @@
             </section>
         </main>
         
-        <footer class="outer-wrapper">
+        <footer class="">
             <div id="footer">
                 <div class="social-buttons">
                     <a class="btn-success" href="https://www.linkedin.com/in/justin-santiago-65b9b0234/"><i class="fa-brands fa-linkedin-in"></i></a>

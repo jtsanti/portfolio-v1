@@ -21,9 +21,6 @@ html {
     transition: 5s ease-in;
 }
 
-body {
-    overflow-x: hidden;
-}
 
 h1 {
     font-family: 'Montserrat Bold', Helvetica, sans-serif;
@@ -56,12 +53,15 @@ nav {
     width: 100%;
 }
 
-main {
-    max-width: 1200px;
-    margin: 0 auto;
+header, main, .inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-main p {
+section {
+    width: 100%;
     color: #4b5155
 }
 
@@ -78,95 +78,42 @@ footer {
     color: #fff;
 }
 
-.outer-wrapper {
-    padding: 0 5vw;
-}
-
 .inner-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 5.5rem 0;
-    max-width: 1150px;
-    width: 100%;
-    align-items: center;
-    text-align: justify;
+    padding: 5.5rem 0;          
 }
 
-#page_navbar {
-    background-color: #293038;
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 0;
-    padding: 0 1rem;
+#navbarNav {
+    justify-content: end;
 }
 
-#page_navbar li {
-    display: flex;
-    align-items: center;
-    color: #FFF;
-}
-
-#page_navbar li:first-child {
-    margin-right: auto;
-    font-weight: 700;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-}
-
-#page_navbar a {
-    display: block;
-    padding: 1rem 0.5rem;
-}
-
-#page_navbar a:hover {
-    filter: brightness(70%);
-}
-
-#page_header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#page-header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/ny-hiking.JPG);
-    /* background-color: #293038;  */
     background-size: cover;
     height: 100vh;
     color: #fff;
     letter-spacing: 0.2rem;
 }
 
-#page_header div {
-    z-index: 100;
-}
-
-#page_header p {
+#page-header p {
     font-weight: 500;
     padding-left: 0.1875rem; /*correcting alignment with h1 */
     color: #fff;
 }
 
-#page_header .btn {
+#page-header .btn {
     display: block;
 }
 
-#next-arrow {
+#page-header a {
+    display: block;
     text-align: center;
-    position: absolute;
-    bottom: 1rem;
-    left: 0;
-    right: 0;
 }
 
-#page_header span {
-    font-size: 15vw;
+#next-arrow {
+    position: relative;
+    top: 3rem;
     filter: brightness(80%);
 }
-
-/* #page_header span:hover {
-    filter: brightness(100%);
-    cursor: pointer;
-    transition: 0.25s ease-in;
-} */
 
 #about img {
     width: 12rem;
@@ -178,20 +125,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
-.icon_tech {
+.tech-icon {
     width: 5.5rem;
     height: 5.5rem;
     padding: 0.25rem;
-    /* filter: grayscale(1); */
 }
-
-/* .icon_tech:hover {
-    filter: grayscale(0);
-    transition: 0.5s ease;
-} */
 
 .tech-learning {
     filter: grayscale(.5);
