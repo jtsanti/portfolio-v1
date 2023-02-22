@@ -21,18 +21,26 @@ html {
     transition: 5s ease-in;
 }
 
+
 h1 {
     font-family: 'Montserrat Bold', Helvetica, sans-serif;
+    font-size: 4.5rem;
 }
 
 h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', Helvetica, sans-serif;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 1.75rem;
 }
 
-p {
-    color: #4b5155
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 a, a:hover, a:visited, a:active {
@@ -40,8 +48,8 @@ a, a:hover, a:visited, a:active {
     text-decoration: none;
 }
 
-h1 {
-    font-size: 2rem;
+p {
+    font-size: 1.15rem;
 }
 
 nav {
@@ -50,99 +58,78 @@ nav {
     width: 100%;
 }
 
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-footer {
-    background-color: #072350;
-}
-
-.wrapper_flex {
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 0;
-    max-width: 1150px;
-    width: 100%;
-    align-items: center;
-    text-align: justify;
-}
-
-.container {
-    padding: 0 5vw;
-}
-
-#page_navbar {
-    background-color: #293038;
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 0;
-    padding: 0 1rem;
-}
-
-#page_navbar li {
-    display: flex;
-    align-items: center;
-    color: #FFF;
-}
-
-#page_navbar li:first-child {
-    margin-right: auto;
-    font-weight: 700;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-}
-
-#page_navbar a {
-    display: block;
-    padding: 1rem 0.5rem;
-}
-
-#page_navbar a:hover {
-    filter: brightness(70%);
-}
-
-#page_header {
+header, main, .outer-wrapper, #footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #293038; 
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    color: #4b5155
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+form {
+    width: 100%;
+}
+
+footer {
+    background-color: #023d19;
+}
+
+.outer-wrapper {
+    padding: 5.5rem 0;
+    max-width: 71rem;          
+}
+
+.outer-wrapper > p {
+    margin: 1.5rem 0;
+    padding: 0 3rem;
+    text-align: center;
+}
+
+.inner-wrapper {
+    padding: 0 10vw;
+    margin: 1.75rem 0;
+}
+
+#navbarNav {
+    justify-content: end;
+}
+
+#page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/ny-hiking.JPG);
     background-size: cover;
     height: 100vh;
     color: #fff;
     letter-spacing: 0.2rem;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000;
 }
 
-#page_header p {
+#page-header p {
     font-weight: 500;
     padding-left: 0.1875rem; /*correcting alignment with h1 */
     color: #fff;
 }
 
-#page_header a {
+#page-header .btn {
+    display: block;
+}
+
+#page-header a {
+    display: block;
     text-align: center;
-    position: absolute;
-    bottom: 1rem;
-    left: 0;
-    right: 0;
 }
 
-#page_header span {
-    font-size: 15vw;
-    filter: brightness(70%);
-}
-
-#page_header span:hover {
-    filter: brightness(100%);
-    cursor: pointer;
-    transition: 0.25s ease-in;
-}
-
-#about p {
-    max-width: 42rem;
-    margin-bottom: 0;
+#next-arrow {
+    position: relative;
+    top: 3rem;
+    filter: brightness(80%);
 }
 
 #about img {
@@ -151,21 +138,57 @@ footer {
     border-radius: 50%;
 }
 
-#experience article div {
+.tech-icon--container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-
+    justify-content: center;
 }
 
-.icon_tech {
-    width: 6rem;
-    height: 6rem;
+.tech-icon {
+    width: 5.5rem;
+    height: 5.5rem;
     padding: 0.25rem;
-    /* filter: grayscale(1); */
 }
 
-/* .icon_tech:hover {
-    filter: grayscale(0);
-    transition: 0.5s ease;
-} */
+.col-split--container {
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form-submit {
+    width: 100%;
+}
+
+#footer {
+    padding: 1.5rem 0;
+    color: #fff;
+}
+
+.social-buttons {
+    margin-bottom: 0.75rem;
+}
+
+.social-buttons a {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .tech-icon--container {
+        padding: 0 5vw;
+    }
+}
