@@ -1,0 +1,15 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-wrap-and-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin setWidthAndHeight($width, $height: width) {
+    width: $width;
+    height: $height;
+}
