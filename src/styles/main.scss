@@ -1,0 +1,241 @@
+@import "mixins";
+@import "variables";
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+
+}
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+    
+}
+@font-face {
+    font-family: 'Opens Sans';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+html {
+    font-family: 'Opens Sans', Helvetica, sans-serif;
+    font-size: $font-one;
+    font-weight: normal;
+    scroll-behavior: smooth;
+}
+
+
+h1 {
+    font-family: 'Montserrat Bold', Helvetica, sans-serif;
+    font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: $space-xl;
+}
+
+h2 {
+    font-size: clamp(2rem, 0.5rem + 7.68vw, 4.5rem);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: $font-lg;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    font-size: $font-md;
+}
+
+nav {
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+}
+
+header, main, .outer-wrapper, #footer {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    color: #4b5155
+}
+
+article {
+    margin-bottom: $space-xxl;
+}
+
+form {
+    width: 100%;
+}
+
+footer {
+    background-color: #023d19;
+}
+
+.outer-wrapper {
+    padding: 5.5rem 0;
+    max-width: 75rem;          
+}
+
+.outer-wrapper > p {
+    margin: $space-lg 0;
+    padding: 0 $space-xxxl;
+    text-align: center;
+}
+
+.inner-wrapper {
+    padding: 0 10vw;
+    margin: $space-xl 0;
+}
+
+#navbarNav {
+    justify-content: end;
+}
+
+#page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/ny-hiking.JPG);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000;
+}
+
+#page-header p {
+    font-weight: 500;
+    padding-left: 0.1875rem; /*correcting alignment with h1 */
+    color: #fff;
+}
+
+#page-header .btn {
+    display: block;
+}
+
+#page-header a.btn {
+    width: 18rem;
+    margin: 0 auto;
+}
+
+#page-header a[href="#about"] {
+    display: block;
+    height: 50%;
+}
+
+#next-arrow {
+    position: relative;
+    top: $space-xxxl;
+    filter: brightness(80%);
+}
+
+#about img {
+    @include setWidthAndHeight(12rem);
+    border-radius: 50%;
+}
+
+.tech-icon--container, .projects-container {
+    @include flex-wrap-and-center;
+}
+
+.tech-icon {
+    @include setWidthAndHeight(5.5rem);
+    padding: $space-xxs;
+}
+
+.col-split--container {
+    @include flex-column;
+}
+
+main section:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.projects-container {
+    width: 100%;
+}
+
+.project-item {
+    margin: $space-lg $space-one;
+    max-width: 45%;
+    position: relative;
+}
+
+.project-image {
+    width: 100%;
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: $space-one;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+}
+
+.project-overlay p {
+    background-color: #015234;
+    color: #fff;
+    font-size: $space-one;
+    padding: $space-one $space-xxl;
+    cursor: pointer;
+}
+
+
+.project-item:hover .project-image {
+    opacity: 0.3;
+    transition: .5s ease;
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.form-group {
+    margin-bottom: $space-xs;
+}
+
+.form-submit {
+    width: 100%;
+}
+
+#footer {
+    padding: $space-lg 0;
+    color: #fff;
+}
+
+.social-buttons {
+    margin-bottom: $space-sm;
+}
+
+.social-buttons a {
+    display: inline-block;
+    padding: $space-xs $space-sm;
+    text-align: center;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    #page-header a.btn {
+        width: 100%;
+    }
+    
+    .tech-icon--container {
+        padding: 0 5vw;
+    }
+
+    .project-item {
+        max-width: 85%;
+    }
+}
