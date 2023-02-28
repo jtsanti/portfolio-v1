@@ -110,26 +110,26 @@ footer {
     color: #fff;
     letter-spacing: 0.2rem;
     text-shadow: 0.0625rem 0.0625rem 0.0625rem #000;
-}
+    
+    p {
+        font-weight: 500;
+        padding-left: 0.1875rem; /*correcting alignment with h1 */
+        color: #fff;
+    }
 
-#page-header p {
-    font-weight: 500;
-    padding-left: 0.1875rem; /*correcting alignment with h1 */
-    color: #fff;
-}
+    .btn {
+        display: block;
+    }
 
-#page-header .btn {
-    display: block;
-}
+    &.a {
+        width: 18rem;
+        margin: 0 auto;
+    }
 
-#page-header a.btn {
-    width: 18rem;
-    margin: 0 auto;
-}
-
-#page-header a[href="#about"] {
-    display: block;
-    height: 50%;
+    a[href="#about"] {
+        display: block;
+        height: 50%;
+    }
 }
 
 #next-arrow {
@@ -181,25 +181,26 @@ main section:nth-child(even) {
     right: 0;
     opacity: 0;
     text-align: center;
+
+    p {
+        background-color: #015234;
+        color: #fff;
+        font-size: $space-one;
+        padding: $space-one $space-xxl;
+        cursor: pointer;
+    }
 }
 
-.project-overlay p {
-    background-color: #015234;
-    color: #fff;
-    font-size: $space-one;
-    padding: $space-one $space-xxl;
-    cursor: pointer;
-}
+.project-item:hover {
+    .project-image {
+        opacity: 0.3;
+        transition: .5s ease;
+    }
 
-
-.project-item:hover .project-image {
-    opacity: 0.3;
-    transition: .5s ease;
-}
-
-.project-item:hover .project-overlay {
-    opacity: 1;
-    transition: .5s ease;
+    .project-overlay {
+        opacity: 1;
+        transition: .5s ease;
+    }
 }
 
 .form-group {
@@ -217,13 +218,13 @@ main section:nth-child(even) {
 
 .social-buttons {
     margin-bottom: $space-sm;
-}
 
-.social-buttons a {
-    display: inline-block;
-    padding: $space-xs $space-sm;
-    text-align: center;
-    border-radius: 10%;
+    a {
+        display: inline-block;
+        padding: $space-xs $space-sm;
+        text-align: center;
+        border-radius: 10%;
+    }
 }
 
 @media screen and (max-width: 768px) {
