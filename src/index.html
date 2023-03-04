@@ -147,33 +147,123 @@
                         <div class="project-item">
                             <img class="project-image" src="./images/projects/react-math-game.png" alt="A math game made in React">
                             <div class="project-overlay">
-                                <p>Learn More</p>
+                                <p data-bs-toggle="modal" data-bs-target="#mathModal">Learn More</p>
                             </div>
                         </div>
 
                         <div class="project-item">
                             <img class="project-image" src="./images/projects/conferences.png" alt="Virtual Conference pages made with Moodle">
                             <div class="project-overlay">
-                                <p>Learn More</p>
+                                <p data-bs-toggle="modal" data-bs-target="#conferenceModal">Learn More</p>
                             </div>                            
                         </div>
 
                         <div class="project-item">
-                            <img class="project-image" src="./images/projects/placeholder.png" alt="placeholder">
+                            <img class="project-image" src="./images/projects/random-film.png" alt="Film a Film">
                             <div class="project-overlay">
-                                <p>Learn More</p>
+                                <p data-bs-toggle="modal" data-bs-target="#filmModal">Learn More</p>
                             </div>
                         </div>
 
                         <div class="project-item">
-                            <img class="project-image" src="./images/projects/placeholder.png" alt="placeholder">
+                            <img class="project-image" src="./images/projects/etch-a-sketch.png" alt="Etch-a-Sketch">
                             <div class="project-overlay">
-                                <p>Learn More</p>
+                                <p data-bs-toggle="modal" data-bs-target="#etchModal">Learn More</p>
                             </div>
                         </div>
                     </article>
                 </div>
             </section>
+
+            <!-- Project Modals -->
+            <div class="modal fade" id="mathModal" tabindex="-1" aria-labelledby="mathModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">React Math Game</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Main Skills</h5>
+                            <h6>React, JavaScript, Bootstrap</h6>
+                            <h5>Backstory</h5>
+                            <p>While going through the JavaScript Developer program with UCF (maintained through Ed2Go), they gave me the option to explore one of the larger libraries to learn. I opted for React, knowing it's popularity, and ended up creating a short math quiz game to help me learn it better. This gave me better practice creating reusable components, key events, and playing with states.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" class="btn btn-success" href="https://github.com/jtsanti/react-math-game" target="_blank">View Source</a>
+                            <a type="button" class="btn btn-outline-success disabled" href="" target="_blank">Demo Currently Unavailable</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="conferenceModal" tabindex="-1" aria-labelledby="conferenceModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Conference Now Websites</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Main Skills</h5>
+                            <h6>HTML5, CSS3, Bootstrap 4+, JavaScript</h6>
+                            <h5>Backstory</h5>
+                            <p>As a Product Analyst with Web Courseworks, our LMS (Learning Management System) was build upon Moodle's framework (PHP, JSON, AJAX) and we retooled this product during the pandemic to produce virtual conference for our clients. This involved working with stakeholders to scope out previous in-person conferences the clients held, and then converting that vision into an online user experience that could rival what their members were familiar with.<p>
+                            <p> A large part of this role involved wireframing and designing the UI from the ground up, and then building out each page with HTML, CSS, and JavaScript.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" class="btn btn-success" href="./resources/VirtualConference_Examples.pdf" target="_blank">View Examples</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="filmModal" tabindex="-1" aria-labelledby="filmModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Find a Film</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Main Skills</h5>
+                            <h6>HTML5, JavaScript</h6>
+                            <h5>Backstory</h5>
+                            <p>While looking through Codecademy's frontend engineer program, I wanted to get some practice in with APIs so I created this quick app to pull movie data from <a href="https://www.themoviedb.org/?language=en-US" target="_blank">The Movie Database</a> and then display it to a user. The app has two modes available:</p>
+                            <ul>
+                                <li>Search for a movie and, if there's a hit, show the movie cover and some info.</li>
+                                <li>Choose a genre and a random movie from that genre will display. You can then like or dislike the movie to show a different random movie, and a tally of your choices will be displayed on the page.</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" class="btn btn-success" href="https://github.com/jtsanti/find-a-film" target="_blank">View Source</a>
+                            <a type="button" class="btn btn-outline-success" href="https://jtsanti.github.io/find-a-film/" target="_blank">View Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="etchModal" tabindex="-1" aria-labelledby="etchModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Etch-a-Sketch</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Main Skills</h5>
+                            <h6>JavaScript</h6>
+                            <h5>Backstory</h5>
+                            <p>I wanted to do a quick project to play around with DOM events and manipulation, so I created this Etch-a-Sketch game. It uses JavaScript to generate the game grid and reset it when needed, along with adding dynamic styles while the user is playing. </p>
+                            <p>I may come back to this in the future and try to figure out a way to make this work with key events instead. I think that would make the game more challenging, along with making it more reminiscent of the real-life game which was pretty hard (in my opinion). The UI is also fairly basic at the moment, and although this project was mainly geared towards functionality, I might also modernize this at some point to make it prettier.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" class="btn btn-success" href="https://github.com/jtsanti/etch-a-sketch" target="_blank">View Source</a>
+                            <a type="button" class="btn btn-outline-success" href="https://jtsanti.github.io/etch-a-sketch/" target="_blank">View Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <section id="contact">
                 <div class="container outer-wrapper">
