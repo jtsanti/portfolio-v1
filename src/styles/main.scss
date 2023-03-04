@@ -112,6 +112,7 @@ footer {
     color: $pure-white;
     letter-spacing: 0.2rem;
     text-shadow: 0.0625rem 0.0625rem 0.0625rem $pure-black;
+
     
     p {
         font-weight: 500;
@@ -220,7 +221,7 @@ main section:nth-child(even) {
 
 .social-buttons {
     margin-bottom: $space-sm;
-
+    
     a {
         display: inline-block;
         padding: $space-xs $space-sm;
