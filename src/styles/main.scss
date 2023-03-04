@@ -45,11 +45,6 @@ h3 {
     font-size: $font-lg;
 }
 
-a, a:hover, a:visited, a:active {
-    color: inherit;
-    text-decoration: none;
-}
-
 p {
     font-size: $font-md;
 }
@@ -60,6 +55,13 @@ nav {
     width: 100%;
 }
 
+header, section {
+    a, a:hover, a:visited, a:active {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
 header, main, .outer-wrapper, #footer {
     @include flex-column;
     justify-content: center;
@@ -68,7 +70,7 @@ header, main, .outer-wrapper, #footer {
 
 section {
     width: 100%;
-    color: #4b5155
+    color: $main-text-color;
 }
 
 article {
@@ -80,7 +82,7 @@ form {
 }
 
 footer {
-    background-color: #023d19;
+    background-color: $primary-green;
 }
 
 .outer-wrapper {
@@ -107,14 +109,14 @@ footer {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/ny-hiking.JPG);
     background-size: cover;
     height: 100vh;
-    color: #fff;
+    color: $pure-white;
     letter-spacing: 0.2rem;
-    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem $pure-black;
     
     p {
         font-weight: 500;
         padding-left: 0.1875rem; /*correcting alignment with h1 */
-        color: #fff;
+        color: $pure-white;
     }
 
     .btn {
@@ -157,7 +159,7 @@ footer {
 }
 
 main section:nth-child(even) {
-    background-color: #f0f0f0;
+    background-color: $off-section-color;
 }
 
 .projects-container {
@@ -183,8 +185,8 @@ main section:nth-child(even) {
     text-align: center;
 
     p {
-        background-color: #015234;
-        color: #fff;
+        background-color: $modal-banner-color;
+        color: $primary-bg-text;
         font-size: $space-one;
         padding: $space-one $space-xxl;
         cursor: pointer;
@@ -213,7 +215,7 @@ main section:nth-child(even) {
 
 #footer {
     padding: $space-lg 0;
-    color: #fff;
+    color: $primary-bg-text;
 }
 
 .social-buttons {
@@ -224,6 +226,36 @@ main section:nth-child(even) {
         padding: $space-xs $space-sm;
         text-align: center;
         border-radius: 10%;
+    }
+}
+
+.modal-header {
+    background-color: $primary-green;
+
+    h4 {
+        margin: 0 auto;
+        color: $primary-bg-text;
+    }
+
+    .btn-close {
+        position: absolute;
+        right: $space-lg;
+        filter: brightness(0) invert(1);
+    }
+}
+
+.modal-body {
+    h6 {
+        font-style: italic;
+    }
+}
+
+.modal-footer {
+    background-color: #dee2e6;
+    display: flex;
+
+    a.btn {
+        flex: 1;
     }
 }
 

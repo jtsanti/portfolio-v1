@@ -147,34 +147,55 @@
                         <div class="project-item">
                             <img class="project-image" src="./images/projects/react-math-game.png" alt="A math game made in React">
                             <div class="project-overlay">
-                                <p>Learn More</p>
+                                <p data-bs-toggle="modal" data-bs-target="#mathModal">Learn More</p>
                             </div>
                         </div>
 
                         <div class="project-item">
                             <img class="project-image" src="./images/projects/conferences.png" alt="Virtual Conference pages made with Moodle">
                             <div class="project-overlay">
-                                <p>Learn More</p>
+                                <p data-bs-toggle="modal" data-bs-target="#conferenceModal">Learn More</p>
                             </div>                            
                         </div>
 
                         <div class="project-item">
                             <img class="project-image" src="./images/projects/random-film.png" alt="Film a Film">
                             <div class="project-overlay">
-                                <p>Learn More</p>
+                                <p data-bs-toggle="modal" data-bs-target="#filmModal">Learn More</p>
                             </div>
                         </div>
 
                         <div class="project-item">
                             <img class="project-image" src="./images/projects/etch-a-sketch.png" alt="Etch-a-Sketch">
                             <div class="project-overlay">
-                                <p>Learn More</p>
+                                <p data-bs-toggle="modal" data-bs-target="#etchModal">Learn More</p>
                             </div>
                         </div>
                     </article>
                 </div>
-
             </section>
+
+            <!-- Project Modals -->
+            <div class="modal fade" id="mathModal" tabindex="-1" aria-labelledby="mathModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">React Math Game</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Main Skills</h5>
+                            <h6>React, JavaScript, Bootstrap</h6>
+                            <h5>Backstory</h5>
+                            <p>While going through the JavaScript Developer program with UCF (maintained through Ed2Go), they gave me the option to explore one of the larger libraries to learn. I opted for React, knowing it's popularity, and ended up creating a short math quiz game to help me learn it better. This gave me better practice creating reusable components, key events, and playing with states.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" class="btn btn-success" href="https://github.com/jtsanti/react-math-game" target="_blank">View Source</a>
+                            <a type="button" class="btn btn-outline-success disabled" href="" target="_blank">Demo Currently Unavailable</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <section id="contact">
                 <div class="container outer-wrapper">
